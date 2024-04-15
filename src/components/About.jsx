@@ -71,9 +71,7 @@ export default function About() {
             Amal Maatoug
           </h5>
           <p className="mb-4 mt-9 text-lg text-neutral-200">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
+          Hello, I'm a student in the fourth year of the computer engineering program at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM)          </p>
           <p className="text-md mt-9 text-neutral-300">
             Future Software Engineer
           </p>
@@ -91,8 +89,7 @@ export default function About() {
             Farah Riahi
           </h5>
           <p className="mb-4 mt-9 text-lg text-neutral-200">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          Hello, I'm a student in the fourth year of the computer engineering program at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM)  
           </p>
           <p className="text-md mt-9 text-neutral-300">
             Future Software Engineer
@@ -112,8 +109,7 @@ export default function About() {
             Fatma Gharouel
           </h5>
           <p className="mb-4 mt-9 text-lg text-neutral-200">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          Hello, I'm a student in the fourth year of the computer engineering program at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM)        
           </p>
           <p className="text-md mt-9 text-neutral-300">
             Future Software Engineer

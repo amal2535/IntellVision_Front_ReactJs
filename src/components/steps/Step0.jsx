@@ -1,22 +1,29 @@
-import React,{useContext} from 'react';
+import React,{useContext, useState} from 'react';
 import cifar10 from "../../images/cifar10.png"
 import fashion from "../../images/fashion.png"
 import {ArrowRight} from 'lucide-react'
 import { homecontext } from "../../HomeContext";
+import Step2 from './Step2';
 
-
-export default function Step0() {
-
+export default function Step0(){
     const {setStepToTrue}=useContext(homecontext)
 
+
+    const [selectedDataset, setSelectedDataset] = useState(null);
+
+    const handleDatasetChange = (event) => {
+        setSelectedDataset(event.target.value);
+    };
+
   return (
+
     <div>
     
         <h1 class="mt-16 text-4xl font-bold bg-gradient-to-t from-teal-400 via-teal-700 to-teal-900  text-transparent bg-clip-text ">Which dataset do you want to use?</h1>
         
         <ul class="grid gap-12 grid-cols-2 mt-12">
             <li>
-                <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="hidden peer"  />
+                <input type="radio" id="hosting-small" name="hosting" value="cifar10" checked={selectedDataset === 'cifar10'} onChange={handleDatasetChange}  class="hidden peer"  />
                 <label for="hosting-small" class="inline-flex items-center p-5  shadow-lg shadow-gray-800  rounded-lg cursor-pointer peer-checked:border-2 peer-checked:scale-105 peer-checked:border-teal-400  hover:bg-gray-700 text-gray-400 bg-gray-800  ">                           
                     <div class=" items-center justify-center">
                         <div class="w-full text-2xl font-bold text-white">Cifar-10</div>
@@ -35,7 +42,7 @@ export default function Step0() {
                 </a>
             </li>
             <li>
-                <input type="radio" id="hosting-big" name="hosting" value="hosting-big" class="hidden peer"/>
+                <input type="radio" id="hosting-big" name="hosting" value="fashion"  checked={selectedDataset === 'fashion'} onChange={handleDatasetChange} class="hidden peer"  />
                 <label for="hosting-big" class="inline-flex items-center p-5 shadow-lg shadow-gray-800 rounded-lg cursor-pointer  peer-checked:border-2 peer-checked:scale-105 peer-checked:border-teal-400 hover:bg-gray-700 text-gray-400 bg-gray-800 ">                           
                     <div class="block items-center justify-center">
                         <div class="w-full text-2xl font-bold text-white">Fashion-Mnist</div>
@@ -54,6 +61,7 @@ export default function Step0() {
                 </a>
             </li>
         </ul>
+
             <div className='w-full flex  justify-end '>
                 <button onClick={()=>setStepToTrue(1)} className="rounded-md bg-teal-400 border-2 border-teal-400 px-8 mx-4 py-2 mt-8 self-end text-white text-lg font-semibold flex justify-center items-center hover:bg-teal-500 hover:shadow-md hover:shadow-teal-950  " >Next&nbsp;<ArrowRight/></button>
             </div>

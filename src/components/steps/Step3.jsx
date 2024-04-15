@@ -62,37 +62,9 @@ export default function Step3() {
                   <td className="whitespace-nowrap text-start px-6 py-4 font-semibold ">CNN</td>
                   <td className="whitespace-nowrap px-6 py-4 ">Cat</td>
                   <td className="whitespace-nowrap px-6 py-4">88%</td>
-
                   <td className="whitespace-nowrap px-6 py-4 ">90.5</td>
                   <td className="whitespace-nowrap px-6 py-4">0.88</td>
                 </tr>
-                <tr className="border-b-2">
-                  <td className="whitespace-nowrap text-start px-6 py-4 font-semibold">RNN</td>
-                  <td className="whitespace-nowrap px-6 py-4 ">Dog</td>
-                  <td className="whitespace-nowrap px-6 py-4">50%</td>
-
-                  <td className="whitespace-nowrap px-6 py-4 ">60.3</td>
-                  <td className="whitespace-nowrap px-6 py-4">0.55</td>
-                </tr>
-                <tr className="border-b-2">
-                  <td className="whitespace-nowrap text-start px-6 py-4 font-semibold ">MobileNet</td>
-                  <td className="whitespace-nowrap px-6 py-4 ">Cat</td>
-                  <td className="whitespace-nowrap px-6 py-4">88%</td>
-
-                  <td className="whitespace-nowrap px-6 py-4">95.6</td>
-                  <td className="whitespace-nowrap px-6 py-4">0.90</td>
-                </tr>
-                <tr className="border-b-2">
-                  <td className="whitespace-nowrap text-start px-6 py-4 font-semibold">MobileNet</td>
-                  <td className="whitespace-nowrap px-6 py-4 ">Cat</td>
-                  <td className="whitespace-nowrap px-6 py-4">88%</td>
-
-                  <td className="whitespace-nowrap px-6 py-4 ">95.6</td>
-                  <td className="whitespace-nowrap px-6 py-4">0.90</td>
-                </tr>
-             
-               
-             
               </tbody>
             </table>
           </div>
