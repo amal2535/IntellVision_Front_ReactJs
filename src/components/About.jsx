@@ -13,7 +13,7 @@ import { GiCyberEye } from "react-icons/gi";
 
 const Card = ({ title, subtitle, Icon, href }) => {
   return (
-    <a href={href} className="w-[30rem] p-4 rounded-md shadow-lg shadow-teal-800 relative overflow-hidden group bg-gradient-to-r from-teal-400 to-cyan-950 "
+    <a href={href} className="md:w-[30rem] w-full p-4 rounded-md shadow-lg shadow-teal-800 relative overflow-hidden group bg-gradient-to-r from-teal-400 to-cyan-950 "
     >
       <div className="absolute inset-0 bg-cyan-950 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
@@ -34,20 +34,18 @@ export default function About() {
 
 
   return (
-    <div>
-        <div className="h-[180rem] ">
+    <div className="overflow-x-hidden">
+        <div className="flex flex-col">
 
-          <div className="w-full h-[45rem] bg-[url('./images/img.jpg')] bg-cover bg-center shadow-lg shadow-cyan-950 ">
+          <div className="h-screen  bg-[url('./images/img.jpg')] bg-cover bg-center shadow-lg shadow-cyan-950 px-8 ">
               <Navbar/>
               <div className='justify-center items-center'>
-                  <p className="bg-teal-600 text-transparent bg-clip-text font-bold text-9xl mt-32">
-                      About 
-                  </p>
-                  <p className="bg-teal-600 text-transparent bg-clip-text font-bold text-6xl">
-                    Us
+                  <p className="bg-teal-600 text-transparent bg-clip-text font-bold text-6xl mt-64">
+                      About Us
                   </p>
                   <p className='text-gray-600 text-2xl  font-medium text-center mt-24'>
-                  Welcome to our innovative image classification platform! 
+                  Welcome to our innovative image classification platform, where innovation meets precision! 
+                  
                  
                   </p>
               </div> 
@@ -60,9 +58,9 @@ export default function About() {
       </div>
 
 
-        <div className=" bg-cyan-950 hover:-translate-y-5 hover:translate-x-5 transition-transform duration-300 ml-[40rem] mt-24 flex rounded-lg shadow-xl shadow-teal-950 h-[20rem] w-[40rem] flex-row hover:bg-gradient-to-r from-teal-500 to-teal-800">
+        <div className="self-center bg-cyan-950 cursor-default md:hover:-translate-y-5 md:hover:translate-x-5 transition-transform duration-300 mt-24 flex rounded-lg shadow-xl shadow-teal-950 md:h-[20rem] h-fit md:w-[40rem] w-full flex-row hover:bg-gradient-to-r from-teal-500 to-teal-800">
         <img
-          className="h-96  rounded-t-lg object-cover md:h-auto w-64 rounded-none rounded-l-lg"
+          className="rounded-t-lg object-cover h-auto w-64 rounded-none rounded-l-lg"
           src={amal1}
           alt="amal" />
         <div className="flex flex-col justify-center p-6 items-center">
@@ -78,9 +76,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-cyan-950 ml-[50rem] hover:-translate-y-5 hover:-translate-x-5 transition-transform duration-300 my-9 flex  flex-row rounded-lg  shadow-xl shadow-teal-950  h-[20rem] w-[40rem] hover:bg-gradient-to-r from-teal-500 to-teal-800">
+      <div className="self-center bg-cyan-950 md:translate-x-24 cursor-default md:hover:-translate-y-5 md:hover:-translate-x-5 transition-transform duration-300 my-9 flex  flex-row rounded-lg  shadow-xl shadow-teal-950  md:h-[20rem] h-fit md:w-[40rem] w-full hover:bg-gradient-to-r from-teal-500 to-teal-800">
         <img
-          className="h-96  rounded-t-lg object-cover md:h-auto w-64 rounded-none rounded-l-lg"
+          className="rounded-t-lg object-cover h-auto w-64 rounded-none rounded-l-lg"
           src={farah}
           alt="farah" />
         <div className="flex flex-col justify-center p-6 items-center">
@@ -98,9 +96,9 @@ export default function About() {
       </div>
 
 
-      <div className="bg-cyan-950 my-9 ml-[30rem] hover:-translate-y-5 hover:-translate-x-5 transition-transform duration-300  flex rounded-lg shadow-xl shadow-teal-950 h-[20rem] w-[40rem] flex-row hover:bg-gradient-to-r from-teal-500 to-teal-800">
+      <div className="self-center bg-cyan-950 my-9 cursor-default  md:hover:-translate-y-5 md:hover:-translate-x-5 transition-transform duration-300  flex rounded-lg shadow-xl shadow-teal-950 md:h-[20rem] h-fit md:w-[40rem] w-full flex-row hover:bg-gradient-to-r from-teal-500 to-teal-800">
         <img
-          className="h-96  rounded-t-lg object-cover md:h-auto w-64 rounded-none rounded-l-lg"
+          className=" rounded-t-md object-cover w-48 rounded-none rounded-l-lg"
           src={fatma}
           alt="fatma" />
         <div className="flex flex-col justify-center p-6 items-center">
@@ -118,21 +116,21 @@ export default function About() {
       </div>
        
       
-      <div className="p-4 mt-48">
+      <div className="p-4 mt-48 flex flex-col">
       <div>
         <h1 className='text-6xl font-bold text-teal-900 ' >
           Our services
         </h1>
       </div>  
 
-      <div className="grid gap-8 grid-cols-2 mt-24 mx-80 w-[80rem]">
+      <div className="grid gap-8 md:grid-cols-2 mt-24 self-center justify-center w-[80rem] px-8">
         <Card 
           title="Development"
           subtitle="Web & Mobile"
           href="#"
           Icon={RiCodeView}
         />
-        <Card title="Machine Learning" subtitle="Image Classification" href="#" Icon={ GrCloudComputer } />
+        <Card title="Machine Learning" subtitle="Image ClassNameification" href="#" Icon={ GrCloudComputer } />
         <Card title="Team" subtitle="Manage team" href="#" Icon={FiUsers} />
         <Card
           title="Computer Vision"
